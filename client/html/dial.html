@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.cdnfonts.com/css/roboto"
+      crossorigin="crossorigin"
+    />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        color: #ffffff;
+        user-select: none;
+        font-family: 'Roboto Light', sans-serif;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Conversation</title>
+  </head>
+  <body>
+    <div id="dialogue" class="dialogue-wrapper">
+      <div v-cloak class="dialogue">
+        <div class="dialogue__head">
+          <div class="dialogue__head-title">
+            <div class="dialogue__head-title--main">{{ name }}</div>
+            <div class="dialogue__head-title--sub">{{ title }}</div>
+          </div>
+          <div class="dialogue__question">{{ text }}</div>
+        </div>
+        <div class="dialogue__items">
+          <div
+            v-for="answer in answerList"
+            :key="answer.id"
+            class="dialogue__item"
+            @click="toggleAnswer(answer)"
+          >
+            {{ answer.text }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/conversation.js" defer></script>
+  </body>
+</html>

@@ -1,12 +1,4 @@
-export const JAMES_NPC = {
-    model: "A_M_M_Hillbilly_02",
-    name: "James",
-    title: "Just a cool guy",
-    position: {x: 0, y: 0, z: 0},
-    heading: 0,
-    conversations: JAMES_CONVERSATIONSщuse this if you have static conversation logic
 
-}
 
 export const JAMES_CONVERSATIONS = [
     {
@@ -16,7 +8,7 @@ export const JAMES_CONVERSATIONS = [
             {
                 text: "What's your name ?",
                 goto: 2,
-                ШIf you use action then you don't need to use answers: ""
+                action: null
 
             },
             {
@@ -43,10 +35,10 @@ export const JAMES_CONVERSATIONS = [
     },
     {
         id: 3,
-        text: "My name is James",
+        text: "I am 26 years old",
         answers: [
             {
-                text: "I am 26 years old",
+                text: "Thank you",
                 goto: null,
                 action: null
 
@@ -55,3 +47,14 @@ export const JAMES_CONVERSATIONS = [
 
     }
 ]
+
+export const JAMES_NPC = {
+    model: "A_M_M_Hillbilly_02",
+    name: "James",
+    title: "Just a cool guy",
+
+    position: {x: -104.16263580322266, y: -1056.949462890625, z: 27.6959228515625},
+    heading: 0.49473902583122253,
+    conversations: JAMES_CONVERSATIONS
+
+}

@@ -11,7 +11,7 @@ James has static answers:
 
 [Live demo](https://youtu.be/UhZxscBsmMs)
 
-## Example 1 - Bill
+## Example 2 - Bill
 James has dynamic answers. He remembers who he gave cars to:
 
 <img src="https://i.imgur.com/MhTwDuM.jpg" alt="Example2" />

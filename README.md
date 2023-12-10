@@ -1,4 +1,4 @@
-# atlv-npc-conversation
+# altv-npc-conversation
 
 # Install
 To install this script, just install it in the `resources` folder of your server and register it in your `config` file.

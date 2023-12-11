@@ -35,7 +35,7 @@ function createNpc(model, pos, heading, name, title, conversations) {
 
 
 alt.on('keyup', (key) => {
-    if (key == 69) {
+    if (key === 69) {
         peds.map(value => {
             let dist = native.getDistanceBetweenCoords(value.pos.x, value.pos.y, value.pos.z, player.pos.x, player.pos.y, player.pos.z, false);
             if (dist <= 2) {
@@ -58,7 +58,7 @@ function drawNametag() {
     peds.map(val => {
 
         const pos = {...native.getPedBoneCoords(val.ped, 12844, 0, 0, 0)};
-        pos.z += 1;
+        pos.z += 0.6;
         const drawDistance = 30;
         let dist = native.getDistanceBetweenCoords(val.ped.pos.x, val.ped.pos.y, val.ped.pos.z, player.pos.x, player.pos.y, player.pos.z, false);
 

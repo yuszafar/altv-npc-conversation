@@ -1,12 +1,14 @@
 import native from "natives";
 import alt from "alt-client";
+import "./npc.js"
 
 let camera;
 let cameraControlsInterval;
 let view;
 let curConversations;
-const url = `http://resource/client/npcConversation/html/dial.html`;
+const url = `http://resource/client/html/dial.html`;
 
+alt.on('activateConversation', activateConversation)
 function activateConversation(npc, name, title, conversations) {
     if (!view) {
         view = new alt.WebView(url);

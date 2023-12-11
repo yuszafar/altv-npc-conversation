@@ -1,5 +1,8 @@
 # altv-npc-conversation
 
+# Description
+Interface for communicating with NPCs
+
 # Install
 To install this script, just install it in the `resources` folder of your server and register it in your `config` file.
 
@@ -12,13 +15,12 @@ James has static answers:
 [Live demo](https://youtu.be/UhZxscBsmMs)
 
 ## Example 2 - Bill
-James has dynamic answers. He remembers who he gave cars to:
+Bill has dynamic answers. He remembers who he gave cars to:
 
 <img src="https://i.imgur.com/MhTwDuM.jpg" alt="Example2" />
 
 [Live demo](https://youtu.be/UhZxscBsmMs?t=12)
-# Description
-Interface for communicating with NPCs
+
 
 
 # Conversations configuration

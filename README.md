@@ -3,6 +3,8 @@
 # Description
 Interface for communicating with NPCs
 
+<img src="https://i.imgur.com/GPrxJI6.png" alt="Demo" />
+
 # Install
 To install this script, just install it in the `resources` folder of your server and register it in your `config` file.
 

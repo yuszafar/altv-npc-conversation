@@ -25,3 +25,7 @@ Interface for communicating with NPCs
 
 > [!NOTE]  
 > If you use **action** in **conversation/answer** then you don't need to use **answers/goto**
+
+# ❤️ Sponsor 
+
+If you want to support me, just give me a [coffee ☕️](https://www.buymeacoffee.com/zafarzafark)
